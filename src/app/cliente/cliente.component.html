@@ -1,0 +1,20 @@
+<div class="container border" style="text-align: center;">
+    <div class="row" style="margin-top: 150px;">
+        <div class="col" style="text-align: end;">
+            <div style="font-size: medium; font-weight: bold;">Senha atual: </div>
+        </div>
+        <div class="col" style="text-align: start;">
+            <div> {{senhaAtual.valor}} </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px;">
+        <div class="col" style="text-align: end;">
+            <button (click)="generateNormalPassword()" class="btn btn-outline-primary" style="width: 50%;">Gerar senha normal</button>
+        </div>
+        <div class="col" style="text-align: start;">
+            <button (click)="generatePreferencialPassword()" class="btn btn-outline-primary" style="width: 50%;">Gerar senha preferencial</button>
+        </div>
+    </div>
+    <div style="margin-top: 10px;">{{senhaGerada.valor}}</div>
+</div>

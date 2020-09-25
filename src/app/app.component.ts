@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pswmanAng';
+
+  constructor(private router: Router) { }
+  
+  redir(path: String){
+    this.router.navigate([`${path}`])
+  }
 }

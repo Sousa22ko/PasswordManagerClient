@@ -1,0 +1,19 @@
+<div class="container border" style="text-align: center;">    
+    <div class="row" style="margin-top: 150px;">
+        <div class="col" style="text-align: end;">
+            <div style="font-size: medium; font-weight: bold;">Senha atual: </div>
+        </div>
+        <div class="col" style="text-align: start;">
+            <div> {{senhaAtual.valor}} </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 50px; margin-bottom: 20px;">
+        <div class="col" style="text-align: end;">
+            <button (click)="chamarProximaSenha()" class="btn btn-outline-primary" style="width: 50%;">Chamar proxima senha</button>
+        </div>
+        <div class="col" style="text-align: start;">
+            <button (click)= "resetDay()" class="btn btn-outline-primary" style="width: 50%;">Resetar senhas do dia</button>
+          </div>
+    </div>
+</div>
